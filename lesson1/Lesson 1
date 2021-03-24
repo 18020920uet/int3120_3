@@ -1,0 +1,119 @@
+Lesson 1:
+	- Tải android studio + thiết lập môi trường
+4. Tạo project
+	- Tên, package name, vị trí để file, ngôn ngữ, api level
+5. Chạy app
+	- Có thể chạy trên máy thật + cáp nối hoặc máy ảo
+6. Chạy app trên máy ảo
+	- Tạo máy ảo trong android studio
+	- Chọn loại máy tạo
+	- Chọn, tải api level
+	- Chọn tên
+7. Chạy app bằng điện thoại
+	- Chuyển sang chế độ development
+	- Bật chế độ usb debug mode 
+	- Chạy app
+8. Phỏng vấn sinh viên
+9. Phân tích cấu trúc app
+	- Cấu trúc Android
+		-	mainfests: xml, thông tin cho hệ điều hành để chạy app,
+				<activity> </activity> nếu sử dụng tính năng ko có thì app sẽ ngỏm
+				quyền cho app  
+		-	java: chứa file source, test, androidTest
+		-	res: resource
+		-	generatedJava: file chứa file buid, build lại mỗi khi chạy, không nên đụng vào
+		- 	Gradle Scripts:  được tạo ra khi project được setup
+					- lấy file kotlin, thêm các thư viện complie với res để tạo ra file APK
+						để install
+10. Quiz
+11. Activity và layout
+	- MainActivity.kt
+		- là activity
+			+ 1 class core dùng để vẽ UI và nhận input đầu vào
+		khi app chạy nó sẽ chạy 1 activity được xác định trong mainfests.xml
+		dưới dạng <intent-filter> </intent-filter>
+			+ 	mỗi activity sẽ có 1 layout file (xml)
+	- activity_main.xml
+		- liên kết đến MainActivity
+		- thể hiện app nhìn như thế nào
+		- định nghĩa text, hình ảnh, nút, ... (gọi là Views) mà có trên màn hình
+		- layout và activity được kết nối qua quá trình layout inflation được thực thi khi bắt đầu activity
+		- Trong quá trình layout inflation => các views ở layout chuyển sang "kotlin view object" được lưu trong bộ nhớ tạm thời => activity sẽ vẽ view objects ra màn hình  
+12. Excercise: Hello Android
+	- 	Phân tích vào file MainActivity
+	=> Được extend AppCompatActivity (là 1 subclass của Android, cho chúng ta truy cập một số tính năng và ngăn chặn khả năng tương thích người với các phiên bản cũ của android)
+	 ! Sử dụng class AppCompatAcitivy để cho nhiều máy có thẻ sử dụng app chúng ta đang xây được.
+		- Các ứng dụng android ko có main method để chạy thay vào đó sẽ chạy MainActivity (trong AndroidMainfest.xml) như là điểm bắt đầu của ứng dụng 
+		- Để chạy ứng dụng, hệ điều hành dùng file mainfest để lấy các biến môi trường và khỏi tạo MainActivity => MainActivity tự chạy setup của chính nó
+		- MainActitity sẽ chạy một số hàm trong quá trình khởi tạo (đẫ được định nghĩa trước, chỉ cần over drive lại hàm), 
+		   - Hàm onCreate
+		   	- định nghĩa layout nào sẽ có được sử dụng cùng với activity và inflate layout đó
+		   	 	=> hàm setContentView vừa khai báo layout và vừa inflate nó
+	-	Phân tích file activity_main.layout (trong res/layout)
+		- Định nghĩa các phần tử, cấu trúc của thiết kế màn hình (vị trí, và các giá trị)
+		- Các phần tử được gọi là views:
+			+ TextView
+			+ Button
+			+ ImageView
+			+ CheckBox
+			+ RadioButton
+			+ EditText
+			+ ProgressBar
+		 - Các view được định nghĩa bởi các tag (thẻ)
+		 	Cac thuộc tính giá trị được định nghĩa bởi các thuộc tính, được mô tả
+		 * View ngoài (constraint layout)
+13. Add a button
+	- ViewGroup: 
+	   có chức năng là giữ nhiều views trên màn hình và xác định vị trí của các view đó
+	- LinearLayout
+	   + Một loại đặc biệt của ViewGroup
+	   + Vị trí của view con sắp xếp lần lượt bên cạnh nhau
+	   orientation: vertical/horizontal
+	   	+ Chiều ngang (Horizontally): Arrow of views (mặc định)
+	   	+ Chiều dọc (Vertically): Stack of views
+	   layout_width/layout_height
+	   	+ math_parents: giá trị trùng với giá trị cha
+	   	+ warp_content: giá trùng với giá trị của content bên trong
+	   textSize:
+	   	SP : scale independent pixels (thay đổi kích cỡ độc lập so không phụ thuộc vào thiết bị)
+	   layout_gravity:
+	   	+ center_horizontal/center_vertical
+	- Chuyển các string sang 1 file khác => dễ quản lý, xử lý các loại ngôn ngữ 
+		(lưu ở res/values/strings.xml)
+14. Excercise: Add a Button
+15. Connecting a button
+	- Câu trúc kotlin object views : hierachy tree
+	=> phải tìm kiếm trong tree => đặt index cho các views trong file xml => tìm dễ, xử lý code dễ hơn
+	khi chạy thì android sẽ tạo ra class R => giữ id cho projects
+	=> trong activity thì sử dụng findViewById để tìm id => trả về ref cho object
+16: Excercise: findViewById
+	=> Thêm vào android:id='@+id/{name}'
+	=> R class sẽ tự nhận cái {name} và sử dụng như thường: R.id.{name}
+18: Excercise: OnClickListener
+	- OnClickListener: Trigger mỗi khi nút đuọc ấn
+	- Toast: pop up thông tin trong 1 khoảng thời gian ngắn
+		makeText:
+		- yêu cầu: - context (Context: -> cho phép kết nối và lấy thông tin của state hiện tại của hệ điều hành, Activity là subclass của context)
+			   - text (nội dung)
+			   - duration (thời gian)
+		- hàm show()
+18: Excercise: Change the text
+19: Dice Images (Giới thiệu)
+20: Exercise: Adding the Image Resource
+	- drawable:
+		-> file loại xml, vector -> xml file 
+		- chứa file hình ảnh
+21: Exercise: Adding the ImageView
+	- ImageView src="@drawable/{name}" file ảnh
+	
+
+	
+	
+		 
+
+		
+	   	 	
+	
+	 
+		 
+					
