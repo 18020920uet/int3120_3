@@ -40,7 +40,7 @@ Lesson 1:
 		- layout và activity được kết nối qua quá trình layout inflation được thực thi khi bắt đầu activity
 		- Trong quá trình layout inflation => các views ở layout chuyển sang "kotlin view object" được lưu trong bộ nhớ tạm thời => activity sẽ vẽ view objects ra màn hình  
 12. Excercise: Hello Android
-	- 	Phân tích vào file MainActivity
+		- 	Phân tích vào file MainActivity
 	=> Được extend AppCompatActivity (là 1 subclass của Android, cho chúng ta truy cập một số tính năng và ngăn chặn khả năng tương thích người với các phiên bản cũ của android)
 	 ! Sử dụng class AppCompatAcitivy để cho nhiều máy có thẻ sử dụng app chúng ta đang xây được.
 		- Các ứng dụng android ko có main method để chạy thay vào đó sẽ chạy MainActivity (trong AndroidMainfest.xml) như là điểm bắt đầu của ứng dụng 
@@ -105,10 +105,37 @@ Lesson 1:
 		- chứa file hình ảnh
 21: Exercise: Adding the ImageView
 	- ImageView src="@drawable/{name}" file ảnh
-	
-
-	
-	
+22: Student Interview: Part 2
+23: Exercise: Finding Views Efficiently
+	-> Giảm tối thiểu  hàm findViewById vì sẽ gây giật lag app
+	-> Khai báo biến cần sử dụng ở contructor 
+	Biến "lateinit" cho phép khai báo biến sau, không cần khai báo null
+24: Namespaces
+	giúp phân biệt các tên giống nhau nhưng khác tính năng ở các namespaces
+	namespaces tools => chỉ dùng để preview, khi compile thì sẽ biến mất
+25: Introduction to Gradle
+	- là công cụ build android 
+	- bao gồm (một số ít):
+		+ Máy điện thoại nào chạy app
+		+ Compile thành file executable code (có thể chạy được)
+		+ Quản lý các thư viện
+		+ Đăng ký app cho google play 
+		+ Chạy các test tự động (automatic test)
+		
+	- Khi ấn vào nút "RUN" -> Gradle compile resources + compiled code + androidmainfest + others + 						dependencies
+			=> build thành APK android application package
+			=> (Android studio install apk và chạy nó trên máy ảo hoặc máy thật)
+	- Có 2 loại gradle file của + single Gradle file cho cả project
+				     + module Gradle file cho mỗi module của project 
+				     	(tập hợp của file mã nguồn và resource + cài đặt setting cho mỗi 
+				     		chức năng module đó)
+26: Build.gradle
+	+ Repository nơi download các thư viện cho app 
+	+ Dependencies thư viện
+27: Android Compatibility
+	+ Api Level
+28: Exercise: Vector Drawables
+	+ 	
 		 
 
 		
