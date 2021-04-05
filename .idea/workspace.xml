@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a444953d-23b9-4fee-88e4-42d2916c42fc" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/int3120_3.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/.idea/lesson2.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lesson2/AboutMe/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1qjueadLKFwSO5tlQNy7bMHtlu7" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a444953d-23b9-4fee-88e4-42d2916c42fc" name="Default Changelist" comment="" />
+      <created>1617605416797</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1617605416797</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="774" y="314" width="424" height="491" key="FileChooserDialogImpl" timestamp="1617605448022">
+      <screen x="72" y="27" width="1848" height="1053" />
+    </state>
+    <state x="774" y="314" width="424" height="491" key="FileChooserDialogImpl/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1617605448022" />
+  </component>
+</project>
