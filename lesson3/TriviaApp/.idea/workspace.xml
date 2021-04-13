@@ -24,7 +24,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="607dd763-ffd6-4ca2-8b39-98758fc1f3fe" name="Default Changelist" comment="">
+    <list default="true" id="607dd763-ffd6-4ca2-8b39-98758fc1f3fe" name="Default Changelist" comment="Lesson 3, exercise 17">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/overflow_menu.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/fileHashes/fileHashes.bin" afterDir="false" />
@@ -36,11 +37,9 @@
       <change beforePath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/6.5/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/navEditor.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/navEditor.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/navigation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/navigation/MainActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/navigation/TitleFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/navigation/TitleFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/navigation.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -83,6 +82,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="navigationResourceFile" />
+        <option value="resourceFile" />
       </list>
     </option>
   </component>
@@ -185,6 +185,14 @@
       <option name="presentableId" value="Default" />
       <updated>1618235222751</updated>
     </task>
+    <task id="LOCAL-00001" summary="Lesson 3, exercise 14">
+      <created>1618290050749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1618290050749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,15 +207,20 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Lesson 3, exercise 14" />
+    <MESSAGE value="Lesson 3, exercise 17" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3, exercise 17" />
+  </component>
   <component name="WindowStateProjectService">
-    <state x="770" y="272" width="442" height="569" key="#com.intellij.ide.util.MemberChooser" timestamp="1618288536597">
+    <state x="770" y="272" width="442" height="576" key="#com.intellij.ide.util.MemberChooser" timestamp="1618290496837">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="770" y="272" width="442" height="569" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618288536597" />
-    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1618243970187">
+    <state x="770" y="272" width="442" height="576" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618290496837" />
+    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1618290318869">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618243970187" />
+    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618290318869" />
     <state x="749" y="301" width="493" height="512" key="AndroidProcessChooserDialog" timestamp="1618289308018">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
