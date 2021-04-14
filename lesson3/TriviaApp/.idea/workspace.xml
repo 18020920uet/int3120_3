@@ -25,8 +25,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="607dd763-ffd6-4ca2-8b39-98758fc1f3fe" name="Default Changelist" comment="Lesson 3, exercise 17">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/fade_in.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/anim/side_in_left.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/navigation/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/navigation/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/navigation/navigation.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +202,14 @@
       <option name="project" value="LOCAL" />
       <updated>1618379294412</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Lesson 3, exercise 27">
+      <created>1618380165482</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1618380165482</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -221,17 +230,18 @@
     <MESSAGE value="Lesson 3, exercise 19" />
     <MESSAGE value="Lesson 3, exercise 23" />
     <MESSAGE value="Lesson 3, exercise 24" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3, exercise 24" />
+    <MESSAGE value="Lesson 3, exercise 27" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 3, exercise 27" />
   </component>
   <component name="WindowStateProjectService">
     <state x="770" y="272" width="442" height="597" key="#com.intellij.ide.util.MemberChooser" timestamp="1618375340237">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
     <state x="770" y="272" width="442" height="597" key="#com.intellij.ide.util.MemberChooser/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618375340237" />
-    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1618378192912">
+    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog" timestamp="1618380496580">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
-    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618378192912" />
+    <state x="574" y="314" width="824" height="491" key="AndroidCreateResourceFileDialog/72.27.1848.1053/1920.0.1920.1080@72.27.1848.1053" timestamp="1618380496580" />
     <state x="749" y="301" width="493" height="512" key="AndroidProcessChooserDialog" timestamp="1618289308018">
       <screen x="72" y="27" width="1848" height="1053" />
     </state>
