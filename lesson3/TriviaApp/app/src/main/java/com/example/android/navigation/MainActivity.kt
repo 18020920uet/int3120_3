@@ -20,6 +20,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.databinding.DataBindingUtil
 import androidx.drawerlayout.widget.DrawerLayout
+import androidx.navigation.NavController
+import androidx.navigation.NavDestination
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
 import androidx.navigation.ui.NavigationUI
@@ -36,6 +38,14 @@ class MainActivity : AppCompatActivity() {
         drawLayout = binding.drawerLayout
         val navController = this.findNavController(R.id.myNavHostFragment)
         appBarConfiguartion = AppBarConfiguration(navController.graph, drawLayout)
+
+        navController.addOnDestinationChangedListener { nc: NavController, nv: NavDestination, args: Bundle? ->
+            if (nv.id == nc.graph.startDestination) {
+                drawLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_UNLOCKED)
+            } else {
+                drawLayout.setDrawerLockMode(DrawerLayout.LOCK_MODE_LOCKED_CLOSED)
+            }
+        }
         NavigationUI.setupActionBarWithNavController(this, navController, drawLayout)
         NavigationUI.setupWithNavController(binding.navView, navController)
 
