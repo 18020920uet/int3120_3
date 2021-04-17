@@ -18,7 +18,6 @@ package com.example.android.dessertpusher
 
 import android.content.ActivityNotFoundException
 import android.os.Bundle
-import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
 import android.widget.Toast
@@ -27,6 +26,8 @@ import androidx.core.app.ShareCompat
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.LifecycleObserver
 import com.example.android.dessertpusher.databinding.ActivityMainBinding
+import timber.log.Timber
+import java.util.*
 
 class MainActivity : AppCompatActivity(), LifecycleObserver {
 
@@ -66,7 +67,8 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        Log.i("MainActitvity", "onCreate called")
+        Timber.i("onCreate called")
+//        Log.i("MainActitvity", "onCreate called")
 
         // Use Data Binding to get reference to the views
         binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
@@ -87,6 +89,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
      * Updates the score when the dessert is clicked. Possibly shows a new dessert.
      */
     private fun onDessertClicked() {
+        Timber.i("onDessertClicked called")
 
         // Update the score
         revenue += currentDessert.price
@@ -103,6 +106,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
      * Determine which dessert to show.
      */
     private fun showCurrentDessert() {
+        Timber.d("showCurrentDessert called")
         var newDessert = allDesserts[0]
         for (dessert in allDesserts) {
             if (dessertsSold >= dessert.startProductionAmount) {
@@ -126,6 +130,7 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
      * Menu methods
      */
     private fun onShare() {
+        Timber.d("onShare called")
         val shareIntent = ShareCompat.IntentBuilder.from(this)
                 .setText(getString(R.string.share_text, dessertsSold, revenue))
                 .setType("text/plain")
@@ -139,20 +144,52 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     }
 
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
+        Timber.d("onCreateOptionsMenu called")
         menuInflater.inflate(R.menu.main_menu, menu)
         return super.onCreateOptionsMenu(menu)
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        Timber.d("onOptionsItemSelected called")
         when (item.itemId) {
             R.id.shareMenuButton -> onShare()
         }
         return super.onOptionsItemSelected(item)
     }
 
-
     override fun onStart() {
         super.onStart()
-        Log.i("MainActivity", "onStart called")
+//        Log.i("MainActivity", "onStart called")
+        Timber.i("onStart called")
+    }
+
+    override fun onStop() {
+        super.onStop()
+        Timber.i("onStop called")
+    }
+
+    override fun onDestroy() {
+        Timber.i("onDestroy called")
+        super.onDestroy()
+    }
+
+    override fun onPause() {
+        super.onPause()
+        Timber.i("onPause called")
+    }
+
+    override fun onRestart() {
+        super.onRestart()
+        Timber.i("onRestart called")
+    }
+
+    override fun onPostResume() {
+        super.onPostResume()
+        Timber.i("onPostResume called")
+    }
+
+    override fun onResume() {
+        super.onResume()
+        Timber.i("onResume called")
     }
 }
