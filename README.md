@@ -17,12 +17,12 @@ Khóa học: https://classroom.udacity.com/courses/ud9012
 
 |Lesson  |Status |
 |:-------|-------|
-|[Lesson 1](https://github.com/inFngNam/int3120_3/tree/main/Lesson 1/) |
-|[Lesson 2](https://github.com/inFngNam/int3120_3/tree/main/Lesson 2/)|
-|[Lesson 3](https://github.com/inFngNam/int3120_3/tree/main/Lesson 3/) |                                    
-|[Lesson 4](https://github.com/inFngNam/int3120_3/tree/main/Lesson 4/)|![Lesson4](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-4-result.png "Lesson 4 progress")
-| [Lesson 5](https://github.com/inFngNam/int3120_3/tree/main/Lesson 5/)|![Lesson5](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-5-result.png "Lesson 5 progress")
-|[Lesson 6](https://github.com/inFngNam/int3120_3/tree/main/Lesson 6/) | 
+|[Lesson 1](https://github.com/inFngNam/int3120_3/tree/main/Lesson%201/) |
+|[Lesson 2](https://github.com/inFngNam/int3120_3/tree/main/Lesson%202/)|
+|[Lesson 3](https://github.com/inFngNam/int3120_3/tree/main/Lesson%203/) |                                    
+|[Lesson 4](https://github.com/inFngNam/int3120_3/tree/main/Lesson%204/)|![Lesson4](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-4-result.png "Lesson 4 progress")
+| [Lesson 5](https://github.com/inFngNam/int3120_3/tree/main/Lesson%205/)|![Lesson5](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-5-result.png "Lesson 5 progress")
+|[Lesson 6](https://github.com/inFngNam/int3120_3/tree/main/Lesson%206/) | 
 | Lesson 7 | 
 | Lesson 8 |
 | Lesson 9 |
