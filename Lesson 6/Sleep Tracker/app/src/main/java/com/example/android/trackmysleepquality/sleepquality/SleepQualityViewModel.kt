@@ -24,9 +24,9 @@ import kotlinx.coroutines.*
 
 class SleepQualityViewModel(private val sleepNightKey: Long = 0L, val database: SleepDatabaseDao) : ViewModel() {
 
-    private val _eventNavigateToSleepTrackerFragment = MutableLiveData<Boolean>(false)
-    val eventNavigateToSleepTrackerFragment: LiveData<Boolean>
-        get() = _eventNavigateToSleepTrackerFragment
+    private val _navigateToSleepTrackerFragmentEvent = MutableLiveData<Boolean>(false)
+    val navigateToSleepTrackerFragmentEvent: LiveData<Boolean>
+        get() = _navigateToSleepTrackerFragmentEvent
 
     private var viewModelJob = Job()
 
@@ -43,12 +43,12 @@ class SleepQualityViewModel(private val sleepNightKey: Long = 0L, val database: 
                 theNight.sleepQuality = quality
                 database.update(theNight)
             }
-            _eventNavigateToSleepTrackerFragment.value = true
+            _navigateToSleepTrackerFragmentEvent.value = true
         }
     }
 
     fun onNavigateToSleepTrackerFragmentComplete() {
-        _eventNavigateToSleepTrackerFragment.value = false
+        _navigateToSleepTrackerFragmentEvent.value = false
     }
 
     override fun onCleared() {

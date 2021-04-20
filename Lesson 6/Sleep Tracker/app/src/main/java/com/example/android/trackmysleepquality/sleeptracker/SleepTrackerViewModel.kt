@@ -42,9 +42,19 @@ class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Applica
         formatNights(nights, application.resources)
     }
 
-    private val _eventNavigateToSleepQualityFragment = MutableLiveData<SleepNight>(null)
-    val eventNavigateToSleepQualityFragment: LiveData<SleepNight>
-        get() = _eventNavigateToSleepQualityFragment
+    private val _navigateToSleepQualityFragmentEvent = MutableLiveData<SleepNight>(null)
+    val navigateToSleepQualityFragmentEvent: LiveData<SleepNight>
+        get() = _navigateToSleepQualityFragmentEvent
+
+    val startButtonVisible = Transformations.map(tonight) { it == null }
+
+    val stopButtonVisible = Transformations.map(tonight) { it != null }
+
+    val clearButtonVisible = Transformations.map(nights) { it.isNotEmpty() }
+
+    private val _showSnackbarEvent = MutableLiveData<Boolean>(false)
+    val showSnackbarEvent: LiveData<Boolean>
+        get() = _showSnackbarEvent
 
     init {
         initializeTonight()
@@ -85,7 +95,7 @@ class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Applica
             val oldNight = tonight.value ?: return@launch
             oldNight.endTimeMilli = System.currentTimeMillis()
             update(oldNight)
-            _eventNavigateToSleepQualityFragment.value = oldNight
+            _navigateToSleepQualityFragmentEvent.value = oldNight
         }
     }
 
@@ -99,6 +109,7 @@ class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Applica
         uiScope.launch {
             clear()
             tonight.value = null
+            _showSnackbarEvent.value = true
         }
     }
 
@@ -108,8 +119,12 @@ class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Applica
         }
     }
 
-    fun onNavigateToSleepQualityFragmentComplete() {
-        _eventNavigateToSleepQualityFragment.value = null
+    fun onNavigateToSleepQualityFragmentEventComplete() {
+        _navigateToSleepQualityFragmentEvent.value = null
+    }
+
+    fun onShowSnackbarEventComplete() {
+        _showSnackbarEvent.value = false
     }
 
     override fun onCleared() {
