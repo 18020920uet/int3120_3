@@ -27,7 +27,7 @@ Khóa học: https://classroom.udacity.com/courses/ud9012
 |[4](https://github.com/inFngNam/int3120_3/tree/main/Lesson%204/)   |![Lesson4](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-4-result.png "Lesson 4 progress")|
 |[5](https://github.com/inFngNam/int3120_3/tree/main/Lesson%205/)   |![Lesson5](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-5-result.png "Lesson 5 progress")|
 |[6](https://github.com/inFngNam/int3120_3/tree/main/Lesson%206/)   |![Lesson6](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-6-result.png "Lesson 6 progress")|
-|[7](https://github.com/inFngNam/int3120_3/tree/main/Lesson%207/)   ||
+|[7](https://github.com/inFngNam/int3120_3/tree/main/Lesson%207/)   |![Lesson7](https://github.com/inFngNam/int3120_3/blob/main/images/lesson-7-result.png "Lesson 7 progress")|
 |[8](https://github.com/inFngNam/int3120_3/tree/main/Lesson%208/)   ||
 |[9](https://github.com/inFngNam/int3120_3/tree/main/Lesson%209/)   ||
 |[10](https://github.com/inFngNam/int3120_3/tree/main/Lesson%2010/) ||
