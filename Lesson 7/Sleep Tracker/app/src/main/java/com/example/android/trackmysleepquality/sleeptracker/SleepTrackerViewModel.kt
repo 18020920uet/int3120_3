@@ -49,6 +49,18 @@ class SleepTrackerViewModel(val database: SleepDatabaseDao, application: Applica
     val navigateToSleepQualityFragmentEvent: LiveData<SleepNight>
         get() = _navigateToSleepQualityFragmentEvent
 
+    private val _navigateToSleepDetailFragmentEvent = MutableLiveData<Long>(null)
+    val navigateToSleepDetailFragmentEvent: LiveData<Long>
+        get() = _navigateToSleepDetailFragmentEvent
+
+    fun onNavigateToSleepDetailFragmentEventComplete() {
+        _navigateToSleepDetailFragmentEvent.value = null
+    }
+
+    fun onSleepNightClicked(id: Long) {
+        _navigateToSleepDetailFragmentEvent.value = id
+    }
+
     val startButtonVisible = Transformations.map(tonight) { it == null }
 
     val stopButtonVisible = Transformations.map(tonight) { it != null }
