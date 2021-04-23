@@ -18,6 +18,7 @@
   -->
 
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools">
 
     <data>
@@ -29,11 +30,11 @@
 
     <ImageView
         android:id="@+id/mars_image"
-        imageURL="@{property.img_src}"
         android:layout_width="match_parent"
         android:layout_height="170dp"
         android:adjustViewBounds="true"
         android:padding="2dp"
         android:scaleType="centerCrop"
+        app:imageUrl="@{property.imgSrcUrl}"
         tools:src="@tools:sample/backgrounds/scenic" />
 </layout>
