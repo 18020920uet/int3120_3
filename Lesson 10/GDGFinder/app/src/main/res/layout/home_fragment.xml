@@ -16,6 +16,7 @@
             android:id="@+id/image"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:contentDescription="@string/header_photo"
             android:scaleType="centerCrop"
             app:layout_constraintDimensionRatio="4:3"
             app:layout_constraintEnd_toEndOf="parent"
@@ -52,7 +53,10 @@
             android:layout_marginTop="13dp"
             android:background="#ff9999"
             android:text="@string/gdgs_are"
-
+            android:textAllCaps="true"
+            android:textColor="#555555"
+            android:textSize="18sp"
+            android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@id/end_grid"
             app:layout_constraintStart_toEndOf="@id/start_grid"
             app:layout_constraintTop_toBottomOf="@+id/intro_text" />
@@ -72,6 +76,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
+            android:contentDescription="@string/end_photo"
             android:scaleType="centerCrop"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintDimensionRatio="3:1.5"

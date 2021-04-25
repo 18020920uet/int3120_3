@@ -31,4 +31,6 @@
     <string name="submitted">Enviado, no hay necesidad de enviar de nuevo.</string>
     <string name="done">Hecho</string>
     <string name="submit">Enviar</string>
+    <string name="header_photo">Header Image</string>
+    <string name="end_photo">End Photo</string>
 </resources>

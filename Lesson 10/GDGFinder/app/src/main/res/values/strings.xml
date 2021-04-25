@@ -38,4 +38,6 @@
     <string name="submitted">Submitted, no need to submit again</string>
     <string name="done">Done</string>
     <string name="submit">Submit</string>
+    <string name="header_photo">Header Image</string>
+    <string name="end_photo">End Photo</string>
 </resources>
