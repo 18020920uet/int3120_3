@@ -1,4 +1,4 @@
-# 2021II INT3120 3 Midterm
+# [2021II INT3120 3 Midterm](https://github.com/inFngNam/int3120_3)
 
 ### Description
 Bài tập giữa kỳ môn: Phát triển ứng dụng di động 
